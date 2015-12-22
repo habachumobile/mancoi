@@ -45,7 +45,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/namsuvui',
       views: {
         'menuContent': {
-          templateUrl: 'templates/namsuvui.html'
+          templateUrl: 'templates/namsuvui.html',
+          controller: 'NamSuVuiCtrl'
         }
       }
     })

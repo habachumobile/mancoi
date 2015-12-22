@@ -23,4 +23,14 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('NamSuVuiCtrl', function($scope) {
+  $scope.su = [
+    { thu: 'Thứ nhất thì ngắm: ', ngam: 'Thiên thần truyền tin cho Đức Bà chịu thai. Ta hãy xin cho được ở khiêm nhường.', id: 11 },
+    { thu: 'Thứ hai thì ngắm: ', ngam: 'Đức Đà đi viếng Bà Thánh Isave. Ta hãy xin cho được lòng yêu người.', id: 12 },
+    { thu: 'Thứ ba thì ngắm: ', ngam: 'Đức Bà sinh Đức Chúa Giêsu trong hang đá. Ta hãy xin cho được lòng khó khăn.', id: 13 },
+    { thu: 'Thứ tư thì ngắm: ', ngam: 'Đức Bà dâng Đức Chúa Giêsu trong đền Thánh. Ta hãy xin cho được vâng lời chịu lụy.', id: 14 },
+    { thu: 'Thứ năm thì ngắm: ', ngam: 'Đức Bà tìm được Đức Chúa Giêsu trong Đền thánh. Ta hãy xin cho đươc giữ nghĩa cùng Chúa luôn.', id: 15 }
+  ];
 });

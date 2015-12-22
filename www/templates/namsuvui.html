@@ -1,9 +1,10 @@
 <ion-view view-title="Mầu Nhiệm năm Sự Vui">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
-      </ion-item>
-    </ion-list>
+    <div class="card">
+      <a class="item item-text-wrap" ng-repeat="item in su" href="#/app/su/{{list.id}}">
+        <h2>{{item.thu}}</h2>
+        <h3>{{item.ngam}}</h3>
+      </a>
+    </div>
   </ion-content>
 </ion-view>
