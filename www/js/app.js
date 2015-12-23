@@ -41,42 +41,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.namsuvui', {
-      url: '/namsuvui',
+  .state('app.namsu', {
+      url: '/namsu/:namsu',
       views: {
         'menuContent': {
-          templateUrl: 'templates/namsuvui.html',
-          controller: 'NamSuVuiCtrl'
+          templateUrl: 'templates/namsu.html',
+          controller: 'NamSuCtrl'
         }
       }
     })
-
-    .state('app.namsuthuong', {
-        url: '/namsuthuong',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/namsuthuong.html'
-          }
-        }
-      })
-
-      .state('app.namsusang', {
-          url: '/namsusang',
-          views: {
-            'menuContent': {
-              templateUrl: 'templates/namsusang.html'
-            }
-          }
-        })
-
-        .state('app.namsumung', {
-            url: '/namsumung',
-            views: {
-              'menuContent': {
-                templateUrl: 'templates/namsumung.html'
-              }
-            }
-          })
 
     .state('app.playlists', {
       url: '/playlists',
