@@ -14,14 +14,14 @@ angular.module('starter.controllers', [])
 .controller('MainCtrl', function($scope) {
   $scope.toc = [
     { title: 'Cách Lần Hạt Mân Côi', link: 'catlanchuoi', id: 1 },
-    { title: 'Mầu Nhiệm năm Sự Vui', link: 'vui', id: 2 },
-    { title: 'Mầu Nhiệm năm Sự Thương', link: 'thuong', id: 3 },
-    { title: 'Mầu Nhiệm năm Sự Mừng', link: 'mung', id: 4 },
-    { title: 'Mầu Nhiệm năm Sự Sáng', link: 'sang', id: 5 }
+    { title: 'Mầu Nhiệm năm Sự Vui', link: 'namsu/vui', id: 2 },
+    { title: 'Mầu Nhiệm năm Sự Thương', link: 'namsu/thuong', id: 3 },
+    { title: 'Mầu Nhiệm năm Sự Mừng', link: 'namsu/mung', id: 4 },
+    { title: 'Mầu Nhiệm năm Sự Sáng', link: 'namsu/sang', id: 5 }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('CatLanChuoiCtrl', function($scope, $stateParams) {
 })
 
 
@@ -33,11 +33,26 @@ angular.module('starter.controllers', [])
 if ($stateParams.namsu == "vui"){
   $scope.title = "Vui";
   $scope.su = [
-    { thu: 'Thứ nhất thì ngắm: ', ngam: 'Thiên thần truyền tin cho Đức Bà chịu thai. Ta hãy xin cho được ở khiêm nhường.', icon: 'vui1_icon.jpg', id: 11 },
-    { thu: 'Thứ hai thì ngắm: ', ngam: 'Đức Đà đi viếng Bà Thánh Isave. Ta hãy xin cho được lòng yêu người.', icon: 'vui2_icon.jpg', id: 12 },
-    { thu: 'Thứ ba thì ngắm: ', ngam: 'Đức Bà sinh Đức Chúa Giêsu trong hang đá. Ta hãy xin cho được lòng khó khăn.', icon: 'vui3_icon.jpg', id: 13 },
-    { thu: 'Thứ tư thì ngắm: ', ngam: 'Đức Bà dâng Đức Chúa Giêsu trong đền Thánh. Ta hãy xin cho được vâng lời chịu lụy.', icon: 'vui4_icon.jpg', id: 14 },
-    { thu: 'Thứ năm thì ngắm: ', ngam: 'Đức Bà tìm được Đức Chúa Giêsu trong Đền thánh. Ta hãy xin cho đươc giữ nghĩa cùng Chúa luôn.', icon: 'vui5_icon.jpg', id: 15 }
+    { thu: 'Thứ nhất thì ngắm: ',
+      ngam: 'Thiên thần truyền tin cho Đức Bà chịu thai. Ta hãy xin cho được ở khiêm nhường.',
+      icon: 'vui1_icon.jpg',
+      id: 11 },
+    { thu: 'Thứ hai thì ngắm: ',
+      ngam: 'Đức Đà đi viếng Bà Thánh Isave. Ta hãy xin cho được lòng yêu người.',
+      icon: 'vui2_icon.jpg',
+      id: 12 },
+    { thu: 'Thứ ba thì ngắm: ',
+      ngam: 'Đức Bà sinh Đức Chúa Giêsu trong hang đá. Ta hãy xin cho được lòng khó khăn.',
+      icon: 'vui3_icon.jpg',
+      id: 13 },
+    { thu: 'Thứ tư thì ngắm: ',
+      ngam: 'Đức Bà dâng Đức Chúa Giêsu trong đền Thánh. Ta hãy xin cho được vâng lời chịu lụy.',
+      icon: 'vui4_icon.jpg',
+      id: 14 },
+    { thu: 'Thứ năm thì ngắm: ',
+      ngam: 'Đức Bà tìm được Đức Chúa Giêsu trong Đền thánh. Ta hãy xin cho đươc giữ nghĩa cùng Chúa luôn.',
+      icon: 'vui5_icon.jpg',
+      id: 15 }
   ];
 
 } else if ($stateParams.namsu == "thuong") {

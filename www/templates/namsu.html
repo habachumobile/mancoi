@@ -4,10 +4,20 @@
       <div class="item item-divider">
         <h2>{{item.thu}}</h2>
       </div>
-      <a class="item item-text-wrap item-thumbnail-left" href="#/app/su/{{item.link}}">
+      <div on-tap="countUp()" class="item item-text-wrap item-thumbnail-left">
       <img src="img/{{item.icon}}">
         <p>{{item.ngam}}</p>
-      </a>
+      </div>
     </div>
   </ion-content>
 </ion-view>
+<script>
+if count == null { var count = 0; }
+
+function countUp() {
+  count = count++;
+    console.log(count);
+}
+
+
+</script>

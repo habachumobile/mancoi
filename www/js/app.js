@@ -36,7 +36,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/catlanchuoi',
     views: {
       'menuContent': {
-        templateUrl: 'templates/catlanchuoi.html'
+        templateUrl: 'templates/catlanchuoi.html',
+        controller: 'CatLanChuoiCtrl'
       }
     }
   })
